@@ -1,0 +1,45 @@
+body {
+    font-family: Roboto, sans-serif;
+    background: #dddddd;
+    margin-left: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 110px;
+    height: auto;
+    .logo {
+        width: 100px;
+        /*max-width: 100%;*/
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.title {
+    display: grid;
+    max-width: 400px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 16px;
+    .location {
+        grid-row: span 2
+    }
+}
+
+.tile.work {
+    ul {
+        padding-left: 16px;
+    }
+}
